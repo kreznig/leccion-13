@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body align="center">
+  <h1>Formulario de Validacion</h1>
+  <section>
+    <form action="">
+        <div>
+          <label for="name">Nombre:</label><br>
+          <input id="name" type="text" placeholder="nombre" pattern="[A-Za-z\s]{1,}" title="Debe ingresar su nombre" required/>
+        </div><br>
+        <div>
+          <label for="lastname">Apellidos:</label><br>
+          <input id="lastname" type="text" placeholder="apellidos" pattern="[A-Za-z\s]{1,}" title="Debe ingresar sus apellidos" required/>
+        </div><br>
+
+        <div>
+          <label for="phone">Teléfono:</label><br>
+          <input id="phone" type="tel" placeholder="999-999999" pattern="[0-9]{9}" required/>
+        </div><br>
+        <div>
+          <label for="">Escoge tu carro pa continuar</label><br>
+          <select required>
+            <option value="">Escoge tu carro...</option>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+        </div><br>
+        <div>
+          <label for="email">Email:</label><br>
+          <input id="email" type="email" name="" placeholder="email@ejemplo.com" required/>
+        </div><br>
+        <div>
+          <label for="pswd">Contraseña:</label><br>
+          <input id="pswd" type="password" pattern=".{6,}" title="6 o más caracteres" required/>
+        </div><br>
+        <div>
+          <input type="submit" name="" value="Send" />
+        </div>
+    </form>
+  </section>
+</body>
+</html>
